@@ -1,0 +1,104 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#agenda {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.column {
+    background-color: #e9e7e7;
+    border: 2px white solid;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    height: 4vh;
+    border-bottom: 1px transparent solid;
+}
+
+#Time .row {
+    width: 6vw;
+    border-bottom: 1px white solid;
+}
+
+#Time .row p {
+    float: left;
+}
+
+#Time #weekday {
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    background-color: #f1f1f1;
+    margin-bottom: 0.1rem;
+}
+
+.time-select p {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.time-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 45%;
+    height: 100%;
+    margin: 0 2%;
+    border: none;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: medium;
+    transition: all 0.3s ease;
+}
+
+.time-select select option:hover {
+    background-color: lightgray;
+}
+
+#Time h1 {
+    margin-bottom: 0;
+}
+
+.column:not(#Time) {
+    width: 12vw;
+    color:  #b8b8b8;
+}
+
+#timeButton {
+    width: 90%;
+    height: 20%;
+    border: none;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.column:not(#Time) #weekday {
+    font-size: 1.09vw;
+}
+
+#weekday {
+    height: 15vh;
+}
+
+.row input {
+    border: none;
+    width: 80%;
+    height: 70%;
+    margin: 0.5rem 0.2rem;
+    padding: 0;
+}
