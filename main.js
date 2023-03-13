@@ -134,17 +134,15 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
 
-
-
         let timeColumn = document.getElementById('Time');
         let rowCount = timeColumn.querySelectorAll(".row").length;
 
-        //TODO: Arreglar porque hace rows de mas
+        // TODO: Fix, each time you click add row button it creates fouble the amount from earlier and it doesnt even start with the correct number of rows 
 
         for (let index = 0; index < rowCount; index++) {
             const rowValue = existingItems[index];
             
-            let row = document.createElement('row');
+            let row = document.createElement('div');
             let rowContent = document.createElement('p');
             
             row.className = 'row';
